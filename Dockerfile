@@ -1,4 +1,4 @@
-FROM linkyard/concourse-helm-resource:latest
+FROM linkyard/concourse-helm-resource:2.10.0-1
 
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/google-cloud-sdk/bin
 ENV KUBERNETES_VERSION 1.10.7
