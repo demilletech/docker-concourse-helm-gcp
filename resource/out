@@ -54,7 +54,7 @@ fi
 is_deployed() {
   if [ -n "$1" ]; then
     set +e
-    helm status $1 | grep "STATUS: DEPLOYED" > /dev/null
+    helm status $1 | grep "STATUS: " > /dev/null
     if [ $? = 0 ]; then
       # exists and is deployed
       echo true
